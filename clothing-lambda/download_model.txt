@@ -1,0 +1,3 @@
+Download the model into this folder (run in the VS Code terminal):
+
+curl -L -o clothing-model-new.onnx https://github.com/DataTalksClub/machine-learning-zoomcamp/releases/download/dl-models/clothing-model-new.onnx
