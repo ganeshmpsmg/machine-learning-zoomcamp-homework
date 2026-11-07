@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  bike-demand-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: bike-rental-demand-prediction:latest
+    container_name: bike_rental_api
+    ports:
+      - "8000:8000"
+    environment:
+      - LOKY_MAX_CPU_COUNT=4
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 5s

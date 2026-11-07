@@ -1,0 +1,50 @@
+{
+  "validation_results": {
+    "Baseline (Train Mean)": {
+      "rmse": 253.93,
+      "mae": 194.08,
+      "r2": -0.2939
+    },
+    "Linear Regression (OLS)": {
+      "rmse": 136.04,
+      "mae": 108.69,
+      "r2": 0.6286
+    },
+    "Ridge Regression": {
+      "rmse": 136.69,
+      "mae": 109.18,
+      "r2": 0.625
+    },
+    "Decision Tree": {
+      "rmse": 74.77,
+      "mae": 49.65,
+      "r2": 0.8878
+    },
+    "Random Forest": {
+      "rmse": 69.93,
+      "mae": 46.3,
+      "r2": 0.9019
+    },
+    "Gradient Boosting (GBR)": {
+      "rmse": 67.01,
+      "mae": 45.75,
+      "r2": 0.9099
+    },
+    "HistGradientBoosting": {
+      "rmse": 60.12,
+      "mae": 40.24,
+      "r2": 0.9275
+    }
+  },
+  "best_model": "HistGradientBoosting",
+  "test_results_train_only": {
+    "rmse": 71.5,
+    "mae": 48.26,
+    "r2": 0.8895
+  },
+  "test_results_final_model": {
+    "rmse": 68.56,
+    "mae": 45.14,
+    "r2": 0.8984
+  }
+}
